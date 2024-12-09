@@ -1,0 +1,29 @@
+The software industry seems to believe it’s doomed to failure when it comes to bugs:) 
+
+However, achieving bug-free (or nearly bug-free) code is not only possible but also practical with the right approach.
+
+In my experience, the main sources of bugs boil down to three key issues:
+
+- Misunderstanding (and misusing) external interfaces
+- Concurrency issues (and resource management in concurrent or event-based setups)
+- Non-total operations (operations that don’t behave correctly across their declared domain)
+
+Let’s break these down:
+
+1. Misunderstanding external interfaces
+You can’t eliminate external interface issues entirely, but you can mitigate them. Isolate external interfaces within your system, and avoid scattering their usage across your codebase. Use types in your wrapping interfaces to express your knowledge about how these interfaces are meant to behave.
+
+2. Concurrency and resource management
+Concurrency and resource management are complex, but you don’t need to reinvent the wheel. Use well-understood primitives, such as those provided by Cats Effect, to manage these challenges safely and predictably.
+
+3. Non-total operations
+This is by far the most prevalent source of bugs, and it’s also the easiest to address. Make your operations explicitly total by limiting their domain. Avoid using generic types like String for names or Int for birth years—these lack semantic meaning and open the door to invalid states. Instead:
+Introduce subtypes (e.g., Name, BirthYear) that validate inputs at creation.
+Use "introduction" functions to handle validation upfront and pass this validated state explicitly through your types.
+
+On a higher level, explicitly consider the operations in your system and represent them with type classes where appropriate. Use property based testing (ScalaCheck)
+
+CS is your friend
+Computer science has already solved most of the problems we face—often exhaustively. Build a habit of recognizing known solutions and reducing your designs to them instead of inventing ad-hoc approaches. 
+
+I wrote a post "Theorems do not crash in production", the link is in the comment

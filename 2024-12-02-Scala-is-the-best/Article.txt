@@ -1,0 +1,13 @@
+Scala is the best system programming language on the JVM, and the JVM is the best platform to target—provided you can use it (excluding cases like embedded systems, hard real-time constraints, or microsecond latency requirements).
+
+This isn’t a matter of personal taste; these are just facts.
+
+I've seen developers switch from Java to Kotlin instead of Scala because they claim Kotlin is "simpler"—which is ridiculous. The subset of Scala that corresponds to Kotlin is no more "complex" in any way. In fact, it's more concise and part of a more expressive and powerful language.
+
+Developers should not behave like children. They need to be mature individuals with a scientific or engineering mindset and a solid understanding of computer science.
+
+This doesn’t mean they must hold a degree, but they should actively work to build this foundation as they progress in their careers.
+
+Stop installing child safety gates.
+
+Wannabe developers: reject being treated like toddlers.

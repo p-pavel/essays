@@ -1,0 +1,23 @@
+This post was written by ChatGPT for me after a book-long conversation. Its English is just better than mine, sorry. 
+
+Why It's Time to Move Beyond Akka and the Actor Model in Scala
+
+The Scala ecosystem has a wealth of modern, powerful tools and libraries, yet it’s often unfairly overshadowed by Akka and its actor model—a paradigm that should now be considered legacy rather than Scala’s defining technology.
+
+Actors had their moment, offering a framework for concurrent programming when options were limited. However, their drawbacks are hard to ignore:
+Opaque and Uncomposable: The behavior of actors isn’t encoded in types, which means you can’t compose them safely. This violates one of the core principles of programming—composability.
+
+Implicit State and Non-determinism: Message queues introduce non-determinism and hidden state, which makes systems harder to debug and reason about.
+
+"Let It Crash" Philosophy: While this made sense in Erlang (a dynamically-typed language), modern static type systems like Scala's offer far better guarantees. Why let it crash when you can prevent crashes at compile time?
+
+We now have robust alternatives for every feature Akka once dominated:
+For concurrency and runtime, libraries like Cats-Effect and ZIO provide type-safe, deterministic solutions with structured concurrency primitives.
+
+For streaming, fs2 and ZIO Streams offer composable, declarative models without the hidden state and fragility of actors.
+
+For scaling and distribution, embracing proper modularity (e.g., OSGi) or careful boundary design can replace opaque network transparency with explicit, maintainable communication layers.
+
+Akka's influence in Scala persists largely due to inertia and historical popularity. But the truth is clear: actors are an anti-pattern for most modern software systems, especially in domains where correctness, maintainability, and scalability matter most.
+
+It’s time for the Scala community to embrace the tools and libraries that reflect the best of what Scala offers: type safety, composability, and clarity. Let’s define Scala by its powerful ecosystem and its capacity to model real-world problems with precision—not by legacy technologies that have outlived their prime.

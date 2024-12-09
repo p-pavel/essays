@@ -1,0 +1,11 @@
+Do you personally know a programmer who "doesn't get monads"?
+
+If so, how is that even possible? Monads have been part of programming since Haskell '98, and languages like Scala support higher-kinded types (HKT), allowing monads to be expressed directly.
+
+Optional types, asynchronous computations, and generators—features now common in mainstream languages—are all unmistakably monadic constructions.
+
+Do people who haven’t taken even one weekend during their professional career to understand the simple concept of composing dependent computations really exist? Why?!
+
+Are they truly so busy that they can’t allocate a few hours to learn this?
+
+I don't get it.

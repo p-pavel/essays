@@ -1,0 +1,37 @@
+Theorems do not crash in production
+
+A type signature in your code represents a proposition: a function exists that transforms A into B. If you can prove this (even with property-based testing), you have the theorem—this is the essence of the Curry-Howard correspondence.
+
+Can you achieve this in your current environment? What’s stopping you?
+
+Does your language let you express such things? If not, why use Java or Go? What’s stopping you from switching to a more expressive tool like Scala?
+
+Can you write down the proposition for your problem domain? If not, is the issue your tools or your methods? After all, isn’t this what education is supposed to prepare us for?
+
+There’s no such thing as “PLs are just tools and a matter of taste.”
+
+Language expressiveness is objective: it’s about what it can or cannot express, enabling its type system to reject incorrect and accept correct programs.
+
+A common misconception is that PLs are designed to “get things done” or move bytes around. But that’s a narrow view.
+
+PLs are meant to enable domain modeling. Any language can provide an implementation for the model, but many lack the expressiveness to define the model itself. Without the model captured in the language and verified by the type system, you're left with code that may work but lacks the guarantees needed for long-term reliability and maintainability.
+
+You'll hear "business needs," "getting things done," and "pragmatism."
+
+I’ll address "business needs" in another post, here let's clarify what engineering is:
+
+Engineering is the practice of using natural science, mathematics and the engineering design process to solve technical problems, increase efficiency and productivity, and improve systems.
+
+It’s not about mindlessly repeating mantras or relying on untraceable claims.
+
+The theory is available, and the practical tools are here. If we don't have enough people, it's an education issue. The industry may be full of impostors, but that’s no excuse to abandon common sense and sound engineering practices. 
+
+I don't believe there’s a true developer shortage.
+
+What we face is a cargo-cult mentality hindering good engineering. There’s a disconnect between "developers," HR, and recruiters who focus on everything but the core competencies—resorting to practices like seeking developers with 5, 10, or 15 years of experience in X, without being able to articulate the necessary software engineering foundations.
+
+I often hear 'Scala is dead' or 'no one uses it,' as if majority opinion makes it true.
+
+The reality is that Scala is thriving, with frequent releases and improvements, including tools that allow seamless syntax upgrades while maintaining compatibility. It runs on the JVM—one of the most stable platforms available. 
+
+The issue isn’t about knowing Scala specifically—it’s about understanding the concepts it offers. These concepts are fundamental to clean design, reliability, reusability, and separation of concerns in software engineering.
